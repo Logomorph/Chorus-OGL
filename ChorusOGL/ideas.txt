@@ -1,0 +1,14 @@
+Infinite world:
+-an infinite city
+	-run thourgh the city
+	-find some specific tasks/waypoints that open paths to different places to get out
+	-maybe have a bunch of people in white and a few in black, showing up from time to time?
+	*kinda odd, not using the full infinite world?
+	*what should the player do?
+-a galaxy
+	-go from a star system to another and...?
+	-launch with a spaceship from a planet
+	-fly around from a planet to another
+	
+-something with fractals
+-paralell universe thing
