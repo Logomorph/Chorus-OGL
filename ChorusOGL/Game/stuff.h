@@ -6,7 +6,7 @@
 #include <iostream>
 
 #include "../Chorus/app/ChorusApp.h"
-#include "../Chorus/scene/GameScene.h"
+#include "GameScene.h"
 
 using namespace std;
 using namespace Chorus;

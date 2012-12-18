@@ -14,7 +14,7 @@ namespace Chorus
   double ChorusApp::g_dCurTime;
   double  ChorusApp::g_fElpasedTime;
   bool ChorusApp::focused;
-  KeyboardState ChorusApp::oldState,
+  keyboard::KeyboardState ChorusApp::oldState,
     ChorusApp::newState;
 
   Content *ChorusApp::content=NULL;

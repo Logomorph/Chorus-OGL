@@ -28,7 +28,12 @@ using namespace std;
 
 namespace Chorus
 {
-
+  namespace keyboard {
+    struct KeyboardState
+    {
+      vector<SDLKey> keys;
+    };
+  }
   class Content;
   class SpriteBatch;
   class Console;
@@ -107,7 +112,7 @@ namespace Chorus
     static vector<conKey> pressedKeys;
     static vector<SDLKey> keys;
 
-    static KeyboardState oldState,newState;
+    static keyboard::KeyboardState oldState,newState;
     static vector<uint8> mouseBtn;
 
 

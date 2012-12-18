@@ -6,8 +6,8 @@ int main(int argc, char *argv[])
   Debug::RedirectConsole();
   Debug::ShouldLog(true);
 
-  _putenv("SDL_VIDEO_WINDOW_POS=center");
-  _putenv("SDL_VIDEO_CENTERED=1");
+  //_putenv("SDL_VIDEO_WINDOW_POS=center");
+  //_putenv("SDL_VIDEO_CENTERED=1");
 
 
   chApp = new ChorusApp("Ludum Dare prep",SCREEN_WIDTH,SCREEN_HEIGHT,FULLSCREEN);

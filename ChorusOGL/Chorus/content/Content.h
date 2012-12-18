@@ -5,7 +5,6 @@
 #include <sdl.h>
 #include <SDL_image.h>
 #include "../core/ChorusCore.h"
-#include "../core/definitions.h"
 #include "../debug/Debug.h"
 #include <map>
 #include <vector>

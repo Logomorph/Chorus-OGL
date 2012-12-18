@@ -1,7 +1,6 @@
 #pragma once
 #include "../core/ChorusCore.h"
 #include "../Chorus.h"
-#include "Transform.h"
 
 #ifdef _DEBUG
 #include <crtdbg.h>

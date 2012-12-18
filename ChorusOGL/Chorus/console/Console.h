@@ -1,6 +1,5 @@
 #pragma once
 #include "../draw/SpriteBatch.h"
-#include "../core/definitions.h"
 #include <sdl.h>
 #include "../core/ChorusCore.h"
 #include "../app/ChorusApp.h"

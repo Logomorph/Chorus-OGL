@@ -1,6 +1,6 @@
 #pragma once
-#include "../app/ChorusApp.h"
-#include "../particle_system/ParticleSystem.h"
+#include "../Chorus/app/ChorusApp.h"
+#include "../Chorus/particle_system/ParticleSystem.h"
 
 using namespace Chorus;
 using namespace std;

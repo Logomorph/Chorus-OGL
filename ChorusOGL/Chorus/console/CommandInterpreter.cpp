@@ -20,7 +20,7 @@ namespace Chorus
 			Console::reset();
 		}
 		else
-		if(command=="/help")
+		if(command=="/help" || command=="/h")
 		{
 			Console::output("Commands:");
 			Console::output("Page UP/Page Down to scroll");
@@ -29,7 +29,7 @@ namespace Chorus
 
 		else
 		{
-			Console::output("unknown command. use /help for more info");
+			Console::output("unknown command. use /help or /h for more info");
 		}
 	}
 }

@@ -9,7 +9,6 @@ using namespace std;
 
 namespace Chorus
 {
-
   //this basically spells "I am GOD!"
 #define elif else if
 
@@ -93,9 +92,4 @@ namespace Chorus
     delete[] pVal;
     pVal = NULL;
   }
-
-  struct KeyboardState
-  {
-    vector<SDLKey> keys;
-  };
 }

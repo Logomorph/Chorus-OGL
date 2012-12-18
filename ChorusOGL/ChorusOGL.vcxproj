@@ -93,12 +93,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Chorus\app\ChorusApp.cpp" />
-    <ClCompile Include="Chorus\core\Camera2D.cpp" />
+    <ClCompile Include="Chorus\camera\Camera2D.cpp" />
     <ClCompile Include="Chorus\console\CommandInterpreter.cpp" />
     <ClCompile Include="Chorus\console\Console.cpp" />
     <ClCompile Include="Chorus\content\Content.cpp" />
     <ClCompile Include="Chorus\debug\Debug.cpp" />
-    <ClCompile Include="Chorus\scene\GameScene.cpp" />
+    <ClCompile Include="Game\GameScene.cpp" />
     <ClCompile Include="Chorus\content\objModel.cpp" />
     <ClCompile Include="Chorus\particle_system\ParticleSystem.cpp" />
     <ClCompile Include="Chorus\draw\SpriteBatch.cpp" />
@@ -110,10 +110,17 @@
     <ClCompile Include="Game\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chorus\scene\GameScene.h" />
+    <ClInclude Include="Chorus\core\Helpers.h" />
+    <ClInclude Include="Chorus\core\Line2d.h" />
+    <ClInclude Include="Chorus\core\Line3d.h" />
+    <ClInclude Include="Chorus\core\Rect2d.h" />
+    <ClInclude Include="Chorus\core\Types.h" />
+    <ClInclude Include="Chorus\core\Vec2d.h" />
+    <ClInclude Include="Chorus\core\Vec3d.h" />
+    <ClInclude Include="Game\GameScene.h" />
     <ClInclude Include="Chorus\content\Model3D.h" />
     <ClInclude Include="Chorus\app\ChorusApp.h" />
-    <ClInclude Include="Chorus\core\Camera2D.h" />
+    <ClInclude Include="Chorus\camera\Camera2D.h" />
     <ClInclude Include="Chorus\Chorus.h" />
     <ClInclude Include="Chorus\core\ChorusCore.h" />
     <ClInclude Include="Chorus\console\CommandInterpreter.h" />
@@ -121,7 +128,6 @@
     <ClInclude Include="Chorus\debug\ConsoleColor.h" />
     <ClInclude Include="Chorus\content\Content.h" />
     <ClInclude Include="Chorus\debug\Debug.h" />
-    <ClInclude Include="Chorus\core\definitions.h" />
     <ClInclude Include="Chorus\content\objModel.h" />
     <ClInclude Include="Chorus\particle_system\ParticleSystem.h" />
     <ClInclude Include="Chorus\draw\SpriteBatch.h" />

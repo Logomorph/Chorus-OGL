@@ -57,14 +57,8 @@
     <ClCompile Include="Chorus\input\XBOXController.cpp">
       <Filter>Chorus\src</Filter>
     </ClCompile>
-    <ClCompile Include="Chorus\core\Camera2D.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
     <ClCompile Include="Chorus\core\Transform.cpp">
       <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Chorus\scene\GameScene.cpp">
-      <Filter>Game\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Chorus\XML\tinyxml.cpp">
       <Filter>Chorus\XML</Filter>
@@ -84,6 +78,12 @@
     <ClCompile Include="Game\main.cpp">
       <Filter>Game\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Game\GameScene.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\camera\Camera2D.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chorus\Chorus.h">
@@ -93,9 +93,6 @@
       <Filter>Chorus\ChApp</Filter>
     </ClInclude>
     <ClInclude Include="Chorus\core\ChorusCore.h">
-      <Filter>Chorus\src</Filter>
-    </ClInclude>
-    <ClInclude Include="Chorus\core\definitions.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
     <ClInclude Include="Chorus\content\Model3D.h">
@@ -122,14 +119,8 @@
     <ClInclude Include="Chorus\input\XBOXController.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="Chorus\core\Camera2D.h">
-      <Filter>Chorus\src</Filter>
-    </ClInclude>
     <ClInclude Include="Chorus\core\Transform.h">
       <Filter>Chorus\src</Filter>
-    </ClInclude>
-    <ClInclude Include="Chorus\scene\GameScene.h">
-      <Filter>Game\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Chorus\XML\tinyxml.h">
       <Filter>Chorus\XML</Filter>
@@ -141,6 +132,36 @@
       <Filter>Game\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Game\stuff.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\types.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameScene.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\camera\Camera2D.h">
+      <Filter>Chorus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\Helpers.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\Line2d.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\Line3d.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\Rect2d.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\Types.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\Vec2d.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\core\Vec3d.h">
       <Filter>Game\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
