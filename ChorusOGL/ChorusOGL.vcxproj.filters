@@ -36,119 +36,119 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChorusApp.cpp">
+    <ClCompile Include="Chorus\app\ChorusApp.cpp">
       <Filter>Chorus\ChApp</Filter>
     </ClCompile>
-    <ClCompile Include="Camera2D.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandInterpreter.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Console.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Content.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Debug.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="SpriteBatch.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Transform.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="XBOXController.cpp">
-      <Filter>Chorus\src</Filter>
-    </ClCompile>
-    <ClCompile Include="XML\tinyxml.cpp">
-      <Filter>Chorus\XML</Filter>
-    </ClCompile>
-    <ClCompile Include="XML\tinyxmlerror.cpp">
-      <Filter>Chorus\XML</Filter>
-    </ClCompile>
-    <ClCompile Include="XML\tinyxmlparser.cpp">
-      <Filter>Chorus\XML</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Game\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="objModel.cpp">
+    <ClCompile Include="Chorus\content\objModel.cpp">
       <Filter>Chorus\src\3D Models</Filter>
     </ClCompile>
-    <ClCompile Include="GameScene.cpp">
+    <ClCompile Include="Chorus\content\Content.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\debug\Debug.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\console\Console.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\console\CommandInterpreter.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\input\XBOXController.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\core\Camera2D.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\core\Transform.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\scene\GameScene.cpp">
       <Filter>Game\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ParticleSystem.cpp">
+    <ClCompile Include="Chorus\XML\tinyxml.cpp">
+      <Filter>Chorus\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\XML\tinyxmlerror.cpp">
+      <Filter>Chorus\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\XML\tinyxmlparser.cpp">
+      <Filter>Chorus\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\draw\SpriteBatch.cpp">
+      <Filter>Chorus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Chorus\particle_system\ParticleSystem.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\main.cpp">
       <Filter>Game\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ChorusApp.h">
+    <ClInclude Include="Chorus\Chorus.h">
+      <Filter>Chorus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\app\ChorusApp.h">
       <Filter>Chorus\ChApp</Filter>
     </ClInclude>
-    <ClInclude Include="Camera2D.h">
+    <ClInclude Include="Chorus\core\ChorusCore.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="Chorus.h">
+    <ClInclude Include="Chorus\core\definitions.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="ChorusCore.h">
+    <ClInclude Include="Chorus\content\Model3D.h">
+      <Filter>Chorus\src\3D Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\content\objModel.h">
+      <Filter>Chorus\src\3D Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\content\Content.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="CommandInterpreter.h">
+    <ClInclude Include="Chorus\debug\Debug.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="Console.h">
+    <ClInclude Include="Chorus\console\Console.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="ConsoleColor.h">
+    <ClInclude Include="Chorus\console\CommandInterpreter.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="Content.h">
+    <ClInclude Include="Chorus\debug\ConsoleColor.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="Debug.h">
+    <ClInclude Include="Chorus\input\XBOXController.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="definitions.h">
+    <ClInclude Include="Chorus\core\Camera2D.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="SpriteBatch.h">
+    <ClInclude Include="Chorus\core\Transform.h">
       <Filter>Chorus\src</Filter>
     </ClInclude>
-    <ClInclude Include="Transform.h">
-      <Filter>Chorus\src</Filter>
+    <ClInclude Include="Chorus\scene\GameScene.h">
+      <Filter>Game\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="XBOXController.h">
-      <Filter>Chorus\src</Filter>
-    </ClInclude>
-    <ClInclude Include="XML\tinyxml.h">
+    <ClInclude Include="Chorus\XML\tinyxml.h">
       <Filter>Chorus\XML</Filter>
     </ClInclude>
-    <ClInclude Include="stuff.h">
+    <ClInclude Include="Chorus\draw\SpriteBatch.h">
+      <Filter>Chorus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Chorus\particle_system\ParticleSystem.h">
       <Filter>Game\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="objModel.h">
-      <Filter>Chorus\src\3D Models</Filter>
-    </ClInclude>
-    <ClInclude Include="Model3D.h">
-      <Filter>Chorus\src\3D Models</Filter>
-    </ClInclude>
-    <ClInclude Include="GameScene.h">
-      <Filter>Game\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ParticleSystem.h">
+    <ClInclude Include="Game\stuff.h">
       <Filter>Game\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ideas.txt">
+    <None Include="txt\ideas.txt">
       <Filter>Txt</Filter>
     </None>
-    <None Include="ToDo.txt">
+    <None Include="txt\ToDo.txt">
       <Filter>Txt</Filter>
     </None>
   </ItemGroup>

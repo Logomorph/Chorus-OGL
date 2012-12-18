@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>ldPrep</ProjectName>
+    <ProjectName>ChorusOGL</ProjectName>
     <ProjectGuid>{79196324-E800-44D3-9689-C47D93EA1B06}</ProjectGuid>
     <RootNamespace>ChorusOGL</RootNamespace>
     <Keyword>Win32Proj</Keyword>
@@ -92,47 +92,47 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ChorusApp.cpp" />
-    <ClCompile Include="Camera2D.cpp" />
-    <ClCompile Include="CommandInterpreter.cpp" />
-    <ClCompile Include="Console.cpp" />
-    <ClCompile Include="Content.cpp" />
-    <ClCompile Include="Debug.cpp" />
-    <ClCompile Include="GameScene.cpp" />
-    <ClCompile Include="objModel.cpp" />
-    <ClCompile Include="ParticleSystem.cpp" />
-    <ClCompile Include="SpriteBatch.cpp" />
-    <ClCompile Include="Transform.cpp" />
-    <ClCompile Include="XBOXController.cpp" />
-    <ClCompile Include="XML\tinyxml.cpp" />
-    <ClCompile Include="XML\tinyxmlerror.cpp" />
-    <ClCompile Include="XML\tinyxmlparser.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Chorus\app\ChorusApp.cpp" />
+    <ClCompile Include="Chorus\core\Camera2D.cpp" />
+    <ClCompile Include="Chorus\console\CommandInterpreter.cpp" />
+    <ClCompile Include="Chorus\console\Console.cpp" />
+    <ClCompile Include="Chorus\content\Content.cpp" />
+    <ClCompile Include="Chorus\debug\Debug.cpp" />
+    <ClCompile Include="Chorus\scene\GameScene.cpp" />
+    <ClCompile Include="Chorus\content\objModel.cpp" />
+    <ClCompile Include="Chorus\particle_system\ParticleSystem.cpp" />
+    <ClCompile Include="Chorus\draw\SpriteBatch.cpp" />
+    <ClCompile Include="Chorus\core\Transform.cpp" />
+    <ClCompile Include="Chorus\input\XBOXController.cpp" />
+    <ClCompile Include="Chorus\XML\tinyxml.cpp" />
+    <ClCompile Include="Chorus\XML\tinyxmlerror.cpp" />
+    <ClCompile Include="Chorus\XML\tinyxmlparser.cpp" />
+    <ClCompile Include="Game\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameScene.h" />
-    <ClInclude Include="Model3D.h" />
-    <ClInclude Include="ChorusApp.h" />
-    <ClInclude Include="Camera2D.h" />
-    <ClInclude Include="Chorus.h" />
-    <ClInclude Include="ChorusCore.h" />
-    <ClInclude Include="CommandInterpreter.h" />
-    <ClInclude Include="Console.h" />
-    <ClInclude Include="ConsoleColor.h" />
-    <ClInclude Include="Content.h" />
-    <ClInclude Include="Debug.h" />
-    <ClInclude Include="definitions.h" />
-    <ClInclude Include="objModel.h" />
-    <ClInclude Include="ParticleSystem.h" />
-    <ClInclude Include="SpriteBatch.h" />
-    <ClInclude Include="Transform.h" />
-    <ClInclude Include="XBOXController.h" />
-    <ClInclude Include="XML\tinyxml.h" />
-    <ClInclude Include="stuff.h" />
+    <ClInclude Include="Chorus\scene\GameScene.h" />
+    <ClInclude Include="Chorus\content\Model3D.h" />
+    <ClInclude Include="Chorus\app\ChorusApp.h" />
+    <ClInclude Include="Chorus\core\Camera2D.h" />
+    <ClInclude Include="Chorus\Chorus.h" />
+    <ClInclude Include="Chorus\core\ChorusCore.h" />
+    <ClInclude Include="Chorus\console\CommandInterpreter.h" />
+    <ClInclude Include="Chorus\console\Console.h" />
+    <ClInclude Include="Chorus\debug\ConsoleColor.h" />
+    <ClInclude Include="Chorus\content\Content.h" />
+    <ClInclude Include="Chorus\debug\Debug.h" />
+    <ClInclude Include="Chorus\core\definitions.h" />
+    <ClInclude Include="Chorus\content\objModel.h" />
+    <ClInclude Include="Chorus\particle_system\ParticleSystem.h" />
+    <ClInclude Include="Chorus\draw\SpriteBatch.h" />
+    <ClInclude Include="Chorus\core\Transform.h" />
+    <ClInclude Include="Chorus\input\XBOXController.h" />
+    <ClInclude Include="Chorus\XML\tinyxml.h" />
+    <ClInclude Include="Game\stuff.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ideas.txt" />
-    <None Include="ToDo.txt" />
+    <None Include="txt\ideas.txt" />
+    <None Include="txt\ToDo.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
