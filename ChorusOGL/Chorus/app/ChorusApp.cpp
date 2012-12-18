@@ -56,8 +56,8 @@ namespace Chorus
   ChorusApp::~ChorusApp(void)
   {
     SafeDelete<Content>(content);
-    SafeDelete<SpriteBatch>( batch);
-    SafeDelete<Console>( console);
+    SafeDelete<SpriteBatch>(batch);
+    SafeDelete<Console>(console);
   }
 
   int ChorusApp::initSDL()

@@ -1,14 +1,5 @@
 ﻿#include "GameScene.h"
 
-GameScene::GameScene(void)
-{
-}
-
-
-GameScene::~GameScene(void)
-{
-}
-
 void GameScene::Init()
 {
   batch = ChorusApp::batch;
@@ -19,7 +10,6 @@ void GameScene::Init()
   
   //tex = content->loadTex("Data/gfx/default1.png");
   tex = content->createTex("redPix",1,1,255,255,255,255);
-  cartoon = content->loadShader("Data/shaders/cartoon.vert","Data/shaders/cartoon.frag");
   physics = content->loadShader("Data/shaders/phys.vert","Data/shaders/phys.frag");
 
   //SDL_WarpMouse(ChorusApp::m_scrW/2,ChorusApp::m_scrH/2);
@@ -48,7 +38,6 @@ void GameScene::Update()
 }
 void GameScene::Draw()
 {
-  //SDL_Delay(200);
   if(state==0)
   {
     glLoadIdentity();			
