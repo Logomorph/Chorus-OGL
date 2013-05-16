@@ -1,5 +1,5 @@
 #pragma once
-#include "types.h"
+#include "Types.h"
 
 namespace Chorus {
 	/// A 2D column vector with 3 elements.

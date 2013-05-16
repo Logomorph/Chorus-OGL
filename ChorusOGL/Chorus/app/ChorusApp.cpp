@@ -4,6 +4,9 @@
 #define new DEBUG_NEW
 #endif
 
+#ifdef _unix_
+#include <unistd.h>
+#endif
 namespace Chorus
 {
 
@@ -246,7 +249,14 @@ namespace Chorus
         }
       }
       else
+      {
+        #ifdef _WIN32
         Sleep(10);
+        #endif
+        #ifdef _unix_
+        usleep(1);
+        #endif
+      }
     }
   }
 

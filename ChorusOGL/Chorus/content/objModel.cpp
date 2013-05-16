@@ -21,13 +21,23 @@ namespace Chorus
     while(f.getline(line,256))
     {
       char * pch;
+      #ifdef _WIN32
       pch = strtok_s (line," ", &context);
+      #endif
+      #ifdef _unix_
+      pch = strtok_r (line," ", &context);
+      #endif
       vector<char*> strings;
       strings.clear();
       while (pch != NULL)
       {
         strings.push_back(pch);
+        #ifdef _WIN32
         pch = strtok_s (NULL, " ", &context);
+        #endif
+        #ifdef _unix_
+        pch = strtok_r (NULL, " ", &context);
+        #endif
       }
       if(strings.size()!=0)
 		{
@@ -128,13 +138,23 @@ namespace Chorus
 				for(size_t j=1;j<strings.size();j++)
 				{
 					char * pch2;
+          #ifdef _WIN32
 					pch2 = strtok_s (strings[j],"/", &context);
+          #endif
+          #ifdef _unix_
+          pch2 = strtok_r (strings[j],"/", &context);
+          #endif
 					vector<char*> str;
 					str.clear();
 					while (pch2 != NULL)
 					{
 						str.push_back(pch2);
+            #ifdef _WIN32
 						pch2 = strtok_s (NULL, "/", &context);
+            #endif
+            #ifdef _unix_
+            pch2 = strtok_r (NULL, "/", &context);
+            #endif
 					} 
                     Vertex objv;
 

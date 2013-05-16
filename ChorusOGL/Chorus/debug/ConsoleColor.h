@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-#ifdef WIN32
+#ifdef _WIN32
 #define COLOR
 #endif
 
@@ -66,8 +66,8 @@ inline std::ostream& white(std::ostream &s)
 }
 
 struct color {
-  color(WORD attribute):m_color(attribute){};
-  WORD m_color;
+  color(short attribute):m_color(attribute){};
+  short m_color;
 };
 
 template <class _Elem, class _Traits>

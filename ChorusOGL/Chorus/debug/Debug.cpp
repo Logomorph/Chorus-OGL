@@ -24,14 +24,26 @@ namespace Chorus
 
 	void Debug::RedirectConsole()
 	{
-		freopen_s (&stream,"CON","w",stdout);
-		freopen_s (&stream,"CON","w",stderr);
+		#ifdef _WIN32
+		freopen (&stream,"CON","w",stdout);
+		freopen (&stream,"CON","w",stderr);
+		#endif
+		#ifdef __unix__
+		freopen ("/dev/tty","w",stdout);
+		freopen ("/dev/tty","w",stderr);
+		#endif
 	}
 
 	void Debug::RedirectFile()
 	{
-		freopen_s (&stream,"stdout.txt","w",stdout);
-		freopen_s (&stream,"stderr.txt","w",stderr);
+		#ifdef _WIN32
+		freopen (&stream,"stdout.txt","w",stdout);
+		freopen (&stream,"stderr.txt","w",stderr);
+		#endif
+		#ifdef __unix__
+		freopen ("stdout.txt","w",stdout);
+		freopen ("stderr.txt","w",stderr);
+		#endif
 	}
 
 	void Debug::Error(const char *outputString)

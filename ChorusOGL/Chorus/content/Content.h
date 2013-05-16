@@ -2,7 +2,7 @@
 
 #define NO_SDL_GLEXT
 #include <GL/glew.h>
-#include <sdl.h>
+#include <SDL.h>
 #include <SDL_image.h>
 #include "../core/ChorusCore.h"
 #include "../debug/Debug.h"

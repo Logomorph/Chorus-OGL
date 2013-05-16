@@ -1,5 +1,5 @@
 #pragma once
-#include "vec2d.h"
+#include "Vec2d.h"
 
 namespace Chorus {
 	typedef struct Line2D

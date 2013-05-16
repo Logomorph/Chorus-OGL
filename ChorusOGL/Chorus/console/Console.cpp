@@ -183,9 +183,9 @@ namespace Chorus
   {
     lines.push_back(text);
   }
-  void Console::output(char text[])
+  /*void Console::output(char text[])
   {
     lines.push_back(string(text));
-  }
+  }*/
 
 }

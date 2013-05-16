@@ -1,6 +1,6 @@
 #pragma once
 #include <math.h>
-#include <sdl.h>
+#include <SDL.h>
 #include <string>
 #include <stdio.h> 
 #include <vector>
@@ -46,8 +46,13 @@ namespace Chorus
 
   static inline string iToa(int a)
   {
-    char b[256];
-    _itoa_s(a,b,256,10);
+    char b[10];
+    #ifdef _WIN32
+    _itoa_s(a,b,10,10);
+    #endif
+    #ifdef _unix_
+    sprintf(b,"%d",a);
+    #endif
 
     string out = string(b);
     return out;
@@ -56,17 +61,18 @@ namespace Chorus
   {
     char b[256];   //To hold . and null
 
-#ifdef WIN32
+    #ifdef _WIN32
     if(decTresh!=-1)
       sprintf_s(b,256,"%.*f",decTresh,a);
     else
       sprintf_s(b,256,"%f",a);
-#else
+    #endif
+    #ifdef _unix_
     if(decTresh!=-1)
-      sprintf_s(b,256,"%.*f",decTresh,a);
+      sprintf(b,"%.*f",decTresh,a);
     else
-      sprintf_s(b,256,"%f",a);
-#endif
+      sprintf(b,"%f",a);
+    #endif
 
     string out = string(b);
     return out;

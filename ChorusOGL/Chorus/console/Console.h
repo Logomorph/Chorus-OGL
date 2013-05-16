@@ -1,6 +1,6 @@
 #pragma once
 #include "../draw/SpriteBatch.h"
-#include <sdl.h>
+#include <SDL.h>
 #include "../core/ChorusCore.h"
 #include "../app/ChorusApp.h"
 #include "CommandInterpreter.h"
@@ -28,7 +28,7 @@ namespace Chorus
 		void Draw(SpriteBatch *batch, Font *fnt,Texture *tex);
 		void setScreenSize(int w, int h);
 		static void output(string text);
-		static void output(char text[]);
+		//static void output(char text[]);
 		static void reset();
 	private:
 		double lastTime;

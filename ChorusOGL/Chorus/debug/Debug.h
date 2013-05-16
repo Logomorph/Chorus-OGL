@@ -1,13 +1,17 @@
 #pragma once
 
 #include <string>
+#ifdef _WIN32
 #include <windows.h>
+#endif
 #include <iostream>
 
 #include "../core/ChorusCore.h"
 
 #ifdef _DEBUG
+#ifdef _WIN32
 #include <crtdbg.h>
+#endif
 #define DEBUG_NEW new (_NORMAL_BLOCK, __FILE__, __LINE__)
 #else
 #define DEBUG_NEW new

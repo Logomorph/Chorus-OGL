@@ -2,15 +2,19 @@
 
 #define _CRTDBG_MAP_ALLOC
 //#include <stdlib.h>
+#ifdef _WIN32
 #include <crtdbg.h>
+#endif
 
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
 #include "../Chorus.h"
+#ifdef _WIN32
 #include <strsafe.h>
-#include <sdl.h>
+#endif
+#include <SDL.h>
 
 
 #pragma comment(lib,"SDL.lib")
