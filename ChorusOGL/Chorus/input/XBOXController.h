@@ -5,7 +5,7 @@
 //uncomment the following line to use xinput
 //#define XIN 1
 
-#ifdef WIN32
+#ifdef _WIN32
 #ifdef XIN 
 
 #ifdef _DEBUG

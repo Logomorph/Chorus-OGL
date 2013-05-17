@@ -101,12 +101,12 @@ namespace Chorus {
 			return length;
 		}
 		float32 Distance(Vec2D v)
-		{
-			return sqrt(pow(x-v.x,2)+pow(y-v.y,2));
+    {
+      return sqrt((x-v.x)*(x-v.x)+(y-v.y)*(y-v.y));
 		}
 		float32 DistanceSquared(Vec2D v)
 		{
-			return pow(x-v.x,2)+pow(y-v.y,2);
+			return (x-v.x)*(x-v.x)+(y-v.y)*(y-v.y);
 		}
 
 		bool isZero()

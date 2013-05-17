@@ -3,10 +3,6 @@
 #include <iostream>
 #include <stdio.h>
 
-#ifdef _WIN32
-#include <windows.h>
-#endif
-
 #include "console/Console.h"
 #include "content/Content.h"
 #include "core/ChorusCore.h"
