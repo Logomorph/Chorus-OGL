@@ -1,5 +1,5 @@
 Chorus OpenGL
-© Alin Baciu 2012
+Â© Alin Baciu 2012
 
 Windows dependencies: 
 1 Visual Studio 2010+
@@ -8,3 +8,5 @@ Linux dependencies:
 1 libsdl1.2-dev 
 2 libsdl-image1.2-dev 
 3 libglew-dev
+
+License: GNU GPL V3
